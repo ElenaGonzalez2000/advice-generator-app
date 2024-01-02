@@ -1,0 +1,69 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+body{
+    background-color: $DarkBlue;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.card-advice{
+    display: flex;
+    flex-direction: column;
+    max-width: 17rem;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    background-color: $DarkGrayishBlue;
+    padding: 2rem 2rem 4rem 2rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 30px;
+    p, span{
+        color: $NeonGreen;
+        letter-spacing: 5px;
+        font-size: .8rem;
+        display: flex;
+    }
+    .advice{
+        color: $LightCyan;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .divider-mobile{
+        max-width: 100%;
+    }
+    .divider-desktop{
+        display: none;
+    }
+    .advice-icon{
+        background-color: $NeonGreen;
+        padding: 1rem;
+        border-radius: 100%;
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        bottom: -1.8rem;
+        transition: .2s ease;
+        &:hover{
+            box-shadow: 0px 0px 1rem $NeonGreen;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .divider-mobile {
+        display: none;
+    }
+    .divider-desktop {
+        display: block!important;
+        max-width: 100%;
+    }
+}

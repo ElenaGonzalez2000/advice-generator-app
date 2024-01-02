@@ -1,0 +1,18 @@
+{
+  "name": "advice-generator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass assets/scss/styles.scss assets/css/styles.css",
+    "sass": "nodemon -e scss -x \"npm run build\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "sass": "^1.69.6"
+  }
+}
